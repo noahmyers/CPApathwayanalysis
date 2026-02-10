@@ -1,0 +1,49 @@
+{
+  "dv": {
+    "qid": "Q52",
+    "question_text": "How has the availability of (or knowledge about) the alternative pathway to CPA licensure impacted your desire to pursue a graduate degree (MAcc or MBA)?"
+  },
+  "perception_predictors": [
+    {
+      "qid": "Q6",
+      "question_text": "What is your overall perception of the change to CPA licensure pathways that creates an alternative pathway with fewer credit hours and an extra year of work experience?",
+      "keyword_score": 4,
+      "overlap_with_dv": 145,
+      "non_missing": 199
+    },
+    {
+      "qid": "Q51",
+      "question_text": "How has the availability of (or knowledge about) the alternative pathway to CPA licensure impacted your desire to pursue the CPA license?",
+      "keyword_score": 3,
+      "overlap_with_dv": 147,
+      "non_missing": 147
+    },
+    {
+      "qid": "Q53",
+      "question_text": "Were you aware of the alternative pathway to CPA licensure before taking the survey?",
+      "keyword_score": 3,
+      "overlap_with_dv": 147,
+      "non_missing": 147
+    }
+  ],
+  "coefficients": {
+    "intercept": 3.327765560093537,
+    "perception_index": 0.0063182881279020275,
+    "awareness_yes": -0.8074405696931626,
+    "r_squared": 0.17365550709089417
+  },
+  "descriptives": {
+    "n_total_responses": 206,
+    "n_model": 145,
+    "dv_distribution": {
+      "No change in desire": 64,
+      "Increased desire": 31,
+      "Decreased desire": 33,
+      "Significantly decreased desire": 13,
+      "Significantly increased desire": 4
+    },
+    "dv_mean": 2.8620689655172415,
+    "perception_index_mean": 3.8517241379310345,
+    "aware_share": 0.6068965517241379
+  }
+}
