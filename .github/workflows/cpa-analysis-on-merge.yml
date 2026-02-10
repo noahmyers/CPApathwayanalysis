@@ -1,0 +1,32 @@
+name: CPA Survey Analysis on PR Merge
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  workflow_dispatch:
+
+jobs:
+  run-analysis:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run analysis
+        run: |
+          python scripts/analyze_survey.py --output-dir artifact_outputs
+
+      - name: Upload analysis artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cpa-pathway-analysis
+          path: artifact_outputs/
+          if-no-files-found: error
